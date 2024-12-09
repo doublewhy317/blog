@@ -1,13 +1,20 @@
 import { defineUserConfig } from "vuepress";
+import { webpackBundler } from "@vuepress/bundler-webpack";
 
 import theme from "./theme.js";
 
 export default defineUserConfig({
+  bundler: webpackBundler({
+    // postcss: {},
+    chainWebpack: (config) => {
+      config.resolve.alias.set("~components", "@/components");
+    },
+  }),
   base: "/blog/",
 
   lang: "zh-CN",
-  title: "博客演示",
-  description: "vuepress-theme-hope 的博客演示",
+  title: "Micky`s Space",
+  description: "个人博客",
 
   theme,
 

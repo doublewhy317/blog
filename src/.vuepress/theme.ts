@@ -7,17 +7,25 @@ export default hopeTheme({
   hostname: "https://mister-hope.github.io",
 
   author: {
-    name: "Mr.Hope",
-    url: "https://mister-hope.com",
+    name: "Micky",
+    // url: "https://mister-hope.com",
   },
 
   iconAssets: "fontawesome-with-brands",
+  /* iconAssets: [
+    "/assets/fontIcon/iconfont.js",
+    "/assets/fontIcon/iconfont.css",
+    "fontawesome-with-brands",
+  ], */
 
-  logo: "https://theme-hope-assets.vuejs.press/logo.svg",
+  // logo: "https://theme-hope-assets.vuejs.press/logo.svg",
+  logo: "/assets/info/micky.jpg",
 
   repo: "vuepress-theme-hope/vuepress-theme-hope",
 
   docsDir: "src",
+
+  // fullscreen: true,
 
   // 导航栏
   navbar,
@@ -31,7 +39,7 @@ export default hopeTheme({
 
   // 博客相关
   blog: {
-    description: "一个前端开发者",
+    description: "一个前端爱好者",
     intro: "/intro.html",
     medias: {
       Baidu: "https://example.com",
