@@ -7,6 +7,7 @@
   "scripts": {
     "docs:build": "vuepress-webpack build src",
     "docs:clean-dev": "vuepress-webpack dev src --clean-cache",
+    "start": "vuepress-webpack dev src",
     "docs:dev": "vuepress-webpack dev src",
     "docs:update-package": "npx vp-update"
   },
